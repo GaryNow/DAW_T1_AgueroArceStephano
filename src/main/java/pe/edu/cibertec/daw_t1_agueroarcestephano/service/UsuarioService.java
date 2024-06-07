@@ -30,7 +30,6 @@ public class UsuarioService implements IUsuarioService {
         Rol usuarioRol = rolRepository.findByNomrol("ADMIN");
         usuario.setRoles(new HashSet<>(Arrays.asList(usuarioRol)));
         usuario.setPassword(passwordEncoder.encode(usuario.getPassword()));
-        //usuario.setPassword(passwordEncoder.encode(randomPassword.generar(7)));
         return usuarioRepository.save(usuario);
     }
 

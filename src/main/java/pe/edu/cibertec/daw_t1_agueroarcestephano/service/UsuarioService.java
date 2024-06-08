@@ -40,12 +40,5 @@ public class UsuarioService implements IUsuarioService {
                 usuario.getActivo(),usuario.getIdusuario()
         );
     }
-    @Override
-    public List<Usuario> listarUsuario() {
-        return usuarioRepository.findAll();
-    }
-    @Override
-    public Usuario buscarUsuarioXIdUsuario(Integer idusuario) {
-        return usuarioRepository.findById(idusuario).orElse(null);
-    }
+
 }

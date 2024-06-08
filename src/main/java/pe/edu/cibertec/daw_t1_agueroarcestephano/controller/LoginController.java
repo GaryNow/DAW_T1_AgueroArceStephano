@@ -25,11 +25,6 @@ public class LoginController {
     public String login(){
         return "auth/frmlogin";
     }
-    //@GetMapping("/login-success")
-    //public String loginSuccess(){
-    //    return "redirect:/auth/dashboard";
-    //}
-
 
     @GetMapping("/register")
     public String register(Model model) {
